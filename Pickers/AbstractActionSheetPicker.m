@@ -791,6 +791,11 @@ CG_INLINE BOOL isIPhone4() {
     };
 }
 
+- (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController
+{
+	return NO;
+}
+
 #pragma mark UIGestureRecognizerDelegate
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
